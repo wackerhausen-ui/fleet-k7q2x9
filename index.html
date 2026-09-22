@@ -1,0 +1,57 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=refresh content="300">
+<meta name=robots content="noindex,nofollow"><title>ibbot fleet</title>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{--ground:#0C1219;--panel:#141E29;--ink:#E9EFF4;--muted:#8DA0B0;--line:#22303D;
+--pos:#33C481;--neg:#E5484D;--warn:#E8A13C;--brand:#53B6CF;--chipbg:#1B2836}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);
+font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.5;padding:22px 16px 60px}
+.wrap{max-width:960px;margin:0 auto}.tick,.lbl,.chip,.snap,.eng,td,th{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-bottom:8px}
+.mark{font-weight:600;font-size:24px;letter-spacing:-.02em}.mark b{color:var(--brand);font-weight:600}
+.snap{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:3px 12px;color:var(--muted);letter-spacing:.04em}
+.snap.live{color:var(--pos);border-color:var(--pos)}
+.hero{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 22px;display:flex;flex-wrap:wrap;gap:8px 36px;align-items:baseline;margin:10px 0 12px}
+.lbl{display:block;font-size:11px;letter-spacing:.09em;color:var(--muted);margin-bottom:2px}
+.big{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:44px;line-height:1.1}
+.mid{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:22px}
+.kv{font-size:15px}.kv b{font-family:"IBM Plex Mono",monospace;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 24px}
+h2{font-size:12px;font-family:"IBM Plex Mono",monospace;letter-spacing:.11em;color:var(--muted);font-weight:500;margin:24px 0 8px;text-transform:uppercase}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 18px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}th{font-size:11px;letter-spacing:.08em;color:var(--muted);font-weight:500;text-align:right;padding:8px 8px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}tr:last-child td{border-bottom:none}th:first-child,td:first-child{text-align:left}
+.tick{font-weight:600}.side{font-size:10.5px;font-weight:600;border-radius:999px;padding:1px 9px;letter-spacing:.05em}
+.long{color:var(--pos);border:1px solid var(--pos)}.short{color:var(--neg);border:1px solid var(--neg)}
+.eng{color:var(--muted);font-size:12px}.off{color:var(--warn);font-size:11px}
+.engines{display:flex;flex-wrap:wrap;gap:8px}.chip{display:inline-flex;align-items:center;gap:8px;background:var(--chipbg);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12px;max-width:100%}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--pos);flex:none}.dot.idle{background:var(--neg)}
+.legend{display:flex;gap:18px;font-size:12px;color:var(--muted);font-family:"IBM Plex Mono",monospace}.legend i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:6px}
+footer{color:var(--muted);font-size:12px;margin-top:30px;line-height:1.7}
+@media(max-width:600px){.big{font-size:36px}body{padding:14px 12px 50px}}
+</style></head><body><div class=wrap>
+<header><div class=mark><b>ibbot</b> fleet</div>
+<span class="snap">○ AFTER HOURS · Tue 22 Sep 2026 · 08:16:55 NY</span>
+<span class=eng>feed live · page refreshes every 300 s</span></header>
+<div class=hero>
+  <div><span class=lbl>TODAY · IB'S OWN DAILY P/L · ALL ENGINES</span><span class=big style="color:var(--neg)">-0.00 %</span>
+    <div class=eng>realised -0.00 % · unrealised +0.00 % on 0 positions</div></div>
+  <div><span class=lbl>SINCE INCEPTION 2026-09-22</span><span class=mid style="color:var(--pos)">+0.0 %</span>
+    <div class=eng>S&amp;P 500 +0.0 % · 1 session</div></div>
+  <div><span class=lbl>OPEN POSITIONS</span><span class=mid>0</span><div class=eng>in the engine books</div></div>
+</div>
+<h2>Fleet vs S&amp;P 500 since inception</h2>
+<div class=card><div class=legend><span><i style="background:#33C481"></i>fleet (net liquidation)</span><span><i style="background:#53B6CF"></i>S&amp;P 500 (SPY)</span></div><div class=eng>chart appears from the second session</div></div>
+<h2>Engines</h2>
+<div class=engines><span class=chip title='market closed'><span class='dot'></span>Day (v9+v10) · <span class=eng>market closed</span></span><span class=chip title='LIVE: flat - decides 15:50, executes 09:30'><span class='dot'></span>Swing Hold · <span class=eng>LIVE: flat - decides 15:50, executes 09:30</span></span><span class=chip title='LIVE: flat - decides 15:50, executes 09:30'><span class='dot'></span>Swing-Wide · <span class=eng>LIVE: flat - decides 15:50, executes 09:30</span></span><span class=chip title='LIVE: flat - decides 15:50, executes 09:30'><span class='dot'></span>10-Day Long Drift · <span class=eng>LIVE: flat - decides 15:50, executes 09:30</span></span><span class=chip title='waiting for the session (streams at 09:31, entries from 10:30)'><span class='dot'></span>Flush Rebound · <span class=eng>waiting for the session (streams at 09:31, entries f</span></span><span class=chip title='waiting for the session (streams 09:31, decision 09:45, exit 15:45)'><span class='dot'></span>Opening Reversal · <span class=eng>waiting for the session (streams 09:31, decision 09:</span></span><span class=chip title='waiting for 09:00 (daily context), decision 09:30:05'><span class='dot'></span>Gap-V (QQQ/SPY) · <span class=eng>waiting for 09:00 (daily context), decision 09:30:05</span></span><span class=chip title='waiting for 09:00 (context), signal 09:45:05, entry 11:00'><span class='dot'></span>QQQ rules (Friday momentum · witching short · capitulation) · <span class=eng>waiting for 09:00 (context), signal 09:45:05, entry </span></span><span class=chip title='waiting for 08:40 (liquidity context + regime), decision 10:00:05'><span class='dot'></span>Early Leaders v2 · <span class=eng>waiting for 08:40 (liquidity context + regime), deci</span></span><span class=chip title='sleeping until the close window'><span class='dot'></span>Night Hold · <span class=eng>sleeping until the close window</span></span><span class=chip title='waiting for 09:00'><span class='dot'></span>ORB (opening range) · <span class=eng>waiting for 09:00</span></span><span class=chip title='waiting for the close decision (15:57 NY)'><span class='dot'></span>IBS (QQQ) · <span class=eng>waiting for the close decision (15:57 NY)</span></span><span class=chip><span class='dot'></span>Janitor · <span class=eng>outside window - next audit 09:25 NY</span></span></div>
+<h2>Open positions</h2>
+<div class=card><table><tr><th>SYM</th><th>SIDE</th><th>SIZE % EQ</th><th>P/L</th><th>SINCE</th><th>ENGINE</th><th>EXIT RULE</th></tr><tr><td colspan=7 class=eng>flat — no open positions in any engine book</td></tr></table></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 14px">
+<div><h2>Safety · order guard</h2><div class="card grid"><div class=kv><span class=lbl>OPENING ORDERS TODAY</span><b>0 / 18</b></div><div class=kv><span class=lbl>NEW POSITIONS</span><b>0 / 16</b></div><div class=kv><span class=lbl>ALL ORDERS</span><b>0 / 40</b></div><div class=kv><span class=lbl>HALT</span><b style='color:var(--pos)'>none</b></div></div></div>
+<div><h2>Execution slippage · measured</h2><div class="card grid"><div class=eng>no live fills logged yet</div></div></div>
+</div>
+<h2>Janitor</h2><div class=card><div class=eng>2026-09-22 05:43 NY · ACTION · pnl feed stale - respawned</div></div>
+<footer>Read-only mirror of the fleet's own files, rebuilt every 60 s during the session (5 min after hours). Percentages of account equity; no account or money figures are published. Nothing here is investment advice.<br>
+<span class=eng>generated Tue 22 Sep 2026 · 08:16:55 NY</span></footer>
+</div></body></html>
